@@ -3,6 +3,7 @@
 #include <string.h>
 int main (void)
 {
+    //main program
     char startstop = get_char("hello, this is the haise sentence maker, what can I do for you? press y to start, and n to quit.\n");
     if(startstop == 'y'){
         int charcount = get_int("number of words\n");
@@ -10,19 +11,21 @@ int main (void)
         printf("DON'T PRESS YOUR SPACEBAR!!!!\n");
         for(int i = 0; i < charcount; i++){
             word[i] = get_string("Word %d\n", i+1);
-        }
+        }//capitalization
         char capital = get_char("would you like to capitalize your sentence? y for yes, n for no.\n");
         if(capital == 'n'){
         }else if (capital == 'y'){
             word[0][0] = word[0][0]-32;
+            //why'd i call it morecaps?
         }char morecaps = get_char("Would you like to capitalize any other words? y for yes, n for no.\n");
         if(morecaps == 'y'){
             int wordamount = get_int("How many words would you like to capitalize?\n");
             for(int i = 0; i< wordamount; i++){
-                int wordnum = get_int("Capitalize word number:\n");
+                int wordnum = get_int("Capitalize word number\n");
                 word[wordnum-1][0] = word[wordnum-1][0]-32;
             }
         }else{}
+        //THIS CRAP DOESN'T WORK! DON'T EDIT IT TILL I FIX IT!
         char midpunc = get_char("would you like to add semicolons and commas? y is yes, n for no.\n");
         if(midpunc == 'y'){
         char midpunchoice = get_char("would you like a semicolon(s), comma(s), or both? use s for semicolon, c for comma, and b for both.\n");
@@ -49,7 +52,7 @@ int main (void)
                 bafnumcom[i] = get_int("after word:\n");
             }
         }
-        }
+        }//punctuation
         char punc = get_char("what type of punctuation would you like at the end? e for ! p for . q for ? if you would like to skip this step, press n.\n");
         if(punc != 'n'){
         for(int i = 0; i< charcount; i++){
@@ -67,7 +70,7 @@ int main (void)
             printf("%s ", word[i]);
             if(midpunchoice == 'y'){
                 for(int i = 0; i<charcount; i++){
-                    
+                    //THIS PART IS BROKEN! DON'T EDIT!
                 }
             }
         }
