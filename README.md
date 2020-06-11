@@ -7,5 +7,4 @@ Tested on ide.cs50.io
 
 note: the files are always going to be called "sentencemaker" because my ide is finnicky
 
-
-update: version 1.4 is going HORRIBLY. any help would be good.
+i use the cs50 header file of cs50.h. please do not compile outside of ide.cs50.io. 
