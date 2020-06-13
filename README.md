@@ -1,10 +1,6 @@
 # sentencemaker
-c program that works to create a sentence with all the words and punctuation you want.
+HEY YALL!
 
-Tested on ide.cs50.io
+Sentencemaker was a (formerly c) program that is in the process of being converted to c++.
 
-
-
-note: the files are always going to be called "sentencemaker" because my ide is finnicky
-
-i use the cs50 header file of cs50.h. please do not compile outside of ide.cs50.io. 
+In the mean while, check the releases of sentencemaker. Expect to hear back in a week.
