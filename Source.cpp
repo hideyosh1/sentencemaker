@@ -23,7 +23,14 @@ int main(void) {
 			std::cin >> temp;
 			words.push_back(temp);
 
-		}for (int i = 0; i < numword; i++) {
+		}
+		char capital;
+		std::cout << "would you like to capitalize your sentence? yes or no?";
+		std::cin >> capital;
+		if (capital == 'y') {
+			words[0][0] = words[0][0] - 32;
+		}
+		for (int i = 0; i < numword; i++) {
 			std::cout << words[i] << " ";
 		}
 		if (punc == 'e') {
